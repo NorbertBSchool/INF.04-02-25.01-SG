@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/urz_dzenia_domowe"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/autor_000000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/prala_image"
+            app:srcCompat="@drawable/pralka" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pralka"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/numOfWashing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sky_blue"
+                android:hint="@string/podaj_nr_prania_1_12"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/royal_blue"
+                android:text="@string/zatwierd"
+                app:cornerRadius="5dp" />
+
+            <TextView
+                android:id="@+id/numOfWashingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numer_prania_nie_podano" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/vacuum_image"
+            app:srcCompat="@drawable/odkurzacz" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odkurzacz"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/startVacuumButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/royal_blue"
+                android:text="@string/w_cz"
+                app:cornerRadius="5dp" />
+
+            <TextView
+                android:id="@+id/statusOfVacuumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odkurzacz_wy_czony" />
+
+            <TextView
+                android:id="@+id/batteryVacuumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_na_adowany" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/zmywarka_image"
+            app:srcCompat="@drawable/zmywarka" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zmywarka"
+                android:textSize="20sp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/cleaningMinutesSlider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:value="30"
+                android:valueFrom="15"
+                android:stepSize="5"
+                android:valueTo="300" />
+
+            <TextView
+                android:id="@+id/cleaningMinutesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/czas_zmywania_15_min" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

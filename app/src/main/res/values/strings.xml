@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">INF.04-02-25.01-SG</string>
+    <string name="urz_dzenia_domowe">Urządzenia Domowe</string>
+    <string name="autor_000000">Autor: 000000</string>
+    <string name="prala_image">Prala image</string>
+    <string name="pralka">Pralka</string>
+    <string name="podaj_nr_prania_1_12">Podaj nr prania 1..12</string>
+    <string name="zatwierd">ZATWIERDŹ</string>
+    <string name="numer_prania_nie_podano">Numer prania: nie podano</string>
+    <string name="odkurzacz">Odkurzacz</string>
+    <string name="w_cz">WŁĄCZ</string>
+    <string name="status_na_adowany">Status: naładowany</string>
+    <string name="odkurzacz_wy_czony">Odkurzacz wyłączony</string>
+    <string name="czas_zmywania_15_min">Czas zmywania 15 min</string>
+    <string name="zmywarka_image">Zmywarka Image</string>
+    <string name="zmywarka">Zmywarka</string>
+    <string name="vacuum_image">Vacuum Image</string>
+</resources>
